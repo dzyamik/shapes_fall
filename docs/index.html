@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shapes</title>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.1/pixi.min.js"></script>
+</head>
+<body>
+    <div class="gameWrapper">
+        <div class="topInfo">
+            <div class="shapesNumber">
+                Number of current shapes: <span id="numberOfShapes">0</span>
+            </div>
+            <div class="shapesNumber">
+                Surface area occupied by shapes, px^2: <span id="surfaceOfShapes">0</span>
+            </div>
+        </div>
+        <div class="gameArea" id="gameArea"></div>
+        <div class="bottomInfo">
+            <div class="buttonWrapper">
+                <div class="minus" id="decSPS">-</div>
+                <div class="plus" id="incSPS">+</div>
+                <div class="shapesPerSec">
+                    Number of shapes per second: <span id="shapesPerSec">1</span>
+                </div>
+            </div>
+            <div class="buttonWrapper">
+                <div class="minus" id="decGravity">-</div>
+                <div class="plus" id="incGravity">+</div>
+                <div class="shapesPerSec">
+                    Gravity value, px/s^2: <span id="gravity">10</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.min.js"></script>
+</body>
+</html>
